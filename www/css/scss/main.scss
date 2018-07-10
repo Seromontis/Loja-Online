@@ -1,0 +1,28 @@
+/* COLORS */
+$primary: 	#5E2BFF;
+$secondary: #F55D3E;
+$terciary: 	#413C58;
+
+$white: 	#F5F5F5;
+$gray1: 	#131414;
+$gray2: 	#262827;
+$gray3: 	#393C3B;
+$gray4:	 	#c5c5c5;
+$gray5: 	#e8e8e8;
+
+// variáveis da grade
+$grid-columns: 		12;
+$grid-max-width: 65em;
+ 
+// breakpoints
+$break-maxwidth: "all and (max-width: 45rem)";
+$break-minwidth: "all and (min-width: 45rem)";
+$breakpoint-small: "only screen and (min-width: 35rem)";
+$breakpoint-medium: "only screen and (min-width: 45rem)";
+
+@import 'ms/functions.scss';
+@import 'ms/reset.scss';
+@import 'ms/ms.scss';
+@import 'ms/footer.scss';
+@import 'ms/interno.scss';
+@import 'ms/grid.scss';

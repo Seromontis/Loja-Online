@@ -1,0 +1,295 @@
+@font-face {
+	font-family:'WebFont';
+	src:url("../css/fonts/black-webfont.woff") format("woff"),
+	url("../css/fonts/black-webfont.woff2") format("woff2");
+	font-weight:900;
+	font-style:normal
+}
+@font-face {
+	font-family:'WebFont';
+	src:url("../css/fonts/extrabold-webfont.woff") format("woff"),
+	url("../css/fonts/extrabold-webfont.woff2") format("woff2");
+	font-weight:800;
+	font-style:normal
+}
+@font-face {
+	font-family:'WebFont';
+	src:url("../css/fonts/bold-webfont.woff") format("woff"),
+	url("../css/fonts/bold-webfont.woff2") format("woff2");
+	font-weight:700;
+	font-style:normal
+}
+@font-face {
+	font-family:'WebFont';
+	src:url("../css/fonts/semibold-webfont.woff") format("woff"),
+	url("../css/fonts/semibold-webfont.woff2") format("woff2");
+	font-weight:600;
+	font-style:normal
+}
+@font-face {
+	font-family:'WebFont';
+	src:url("../css/fonts/medium-webfont.woff") format("woff"),
+	url("../css/fonts/medium-webfont.woff2") format("woff2");
+	font-weight:500;
+	font-style:normal
+}
+@font-face {
+	font-family:'WebFont';
+	src:url("../css/fonts/regular-webfont.woff") format("woff"),
+	url("../css/fonts/regular-webfont.woff2") format("woff2");
+	font-weight:400;
+	font-style:normal
+}
+@font-face {
+	font-family:'WebFont';
+	src:url("../css/fonts/light-webfont.woff") format("woff"),
+	url("../css/fonts/light-webfont.woff2") format("woff2");
+	font-weight:300;
+	font-style:normal
+}
+@font-face {
+	font-family:'WebFont';
+	src:url("../css/fonts/extralight-webfont.woff") format("woff"),
+	url("../css/fonts/extralight-webfont.woff2") format("woff2");
+	font-weight:200;
+	font-style:normal
+}
+@font-face {
+	font-family:'WebFont';
+	src:url("../css/fonts/thin-webfont.woff") format("woff"),
+	url("../css/fonts/thin-webfont.woff2") format("woff2");
+	font-weight:100;
+	font-style:normal
+}
+::-webkit-scrollbar {
+	width:0.5rem;
+	height:0.5rem;
+}
+::-webkit-scrollbar-track-piece {
+	background-color:#FFF
+}
+::-webkit-scrollbar-thumb:vertical {
+	height:0.5rem;
+	background-color:#333650
+}
+::-webkit-scrollbar-thumb:horizontal {
+	width:0.5rem;
+	background-color:#333650
+}
+::-ms-clear {
+	width:0;
+	height:0;
+}
+::-ms-reveal {
+	width:0;
+	height:0;
+}
+html {
+    font-size: 16px;  // 1rem = 16px
+	touch-action:pan-y;
+	-ms-touch-action:pan-y
+}
+body {
+	font-family:'WebFont', sans-serif;
+	background-color:#FFFFFF;
+	color:#676770;
+	font-weight:200;
+	margin:0;
+    font-size: 16px;  // 1rem = 16px
+	touch-action:pan-y;
+	-ms-touch-action:pan-y
+}
+a, a:visited, a:hover{
+	@include no-select;
+}
+
+.no-space{
+	padding: 0;
+	margin: 0;
+}
+.bg-primary {
+	background-color: $primary;
+}
+
+.bg-secondary {
+	background-color: $secondary;
+}
+
+.bg-terciary {
+	background-color: $terciary;
+}
+
+.bg-white {
+	background-color: $white;
+}
+
+.bg-gray1 {
+	background-color: $gray1;
+}
+.bg-gray2 {
+	background-color: $gray2;
+}
+.bg-gray3 {
+	background-color: $gray3;
+}
+.bg-gray4 {
+	background-color: $gray4;
+}
+.bg-gray5 {
+	background-color: $gray5;
+}
+
+.txt-right {
+	text-align: right;
+}
+.txt-center {
+	text-align: center;
+}
+.txt-left {
+	text-align: left;
+}
+
+.flt-left {
+	float: left;
+}
+.flt-right {
+	float: right;
+}
+.li{
+	padding: 0.5rem;
+	@include border-box;
+}
+
+
+
+
+
+
+
+
+
+.ux_dropbox {
+
+	cursor: pointer;
+	background-color: #ffffff;
+	@include border-radius(7px);
+
+	& .ux_title {
+
+		color: $gray3;
+	}
+
+	& .ux_box_dropbox {
+		cursor: default;
+	}
+
+ 	& .ux_dropbox_closed {
+ 		display: none;
+ 	}
+
+ 	& .ux_dropbox_open {
+ 		display: block;
+ 	}
+}
+.ux_dropbox:active {
+	background-color: (#ffffff - 10);
+}
+
+
+.box {
+	width: 100%;
+	display: block;
+	padding: 1rem;
+
+	background-color: white;
+	border: 1px solid $gray4;
+	color: $gray1;
+	@include border-radius(7px);
+	@include border-box;
+}
+
+
+@include width;
+@include pd-right;
+@include pd-center;
+@include pd-left;
+@include st-space;
+@include font;
+
+
+@media #{$break-minwidth}{
+
+	.no-pc {
+		display: none !important;
+		position: absolute;
+		margin-left: -99999px;
+	}
+}
+@media #{$break-maxwidth} {
+
+	.no-mobile {
+		display: none !important;
+		position:absolute;
+		margin-left:-99999px
+	}
+}
+
+
+
+.inline{
+	display: inline-block;
+}
+
+
+#ms-aviso-box{
+	position: absolute;
+	top: 50px;
+	width: 80vw;
+	z-index: 999999;
+	margin: auto;
+}
+
+
+
+
+
+
+
+.hidden{
+	margin-top:-9999px !important;
+	top: 0;
+	left: 0;
+	width: 1px;
+	height: 0;
+	position: absolute !important;
+	opacity: 0 !important;
+	overflow: auto
+}
+.box-true{
+	background-color: #bdffbd;
+	padding: 5px;
+	text-align: center;
+	color: black;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	outline: none;
+}
+
+.box-neutro{
+	background-color: #cbefff;
+	padding: 5px;
+	text-align: center;
+	color: black;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	outline: none;
+}
+.box-false{
+	background-color: #ffceca;
+	padding: 5px;
+	text-align: center;
+	color: black;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	outline: none;
+}

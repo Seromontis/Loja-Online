@@ -1,0 +1,65 @@
+.miniatura {
+	position: relative;
+	vertical-align: middle;
+	@include border-radius(0 0 5px 5px);
+
+	& .box-img{
+		width: 100%;
+		display: block;
+
+		vertical-align: top;
+		padding-top: 68%;
+		overflow: hidden;
+	}
+
+	& img {
+
+		display: block;
+		position: absolute;
+		top: 0;
+		left: 0;
+		border: 1px solid $gray4;
+		transform: translateY(-10%);
+		@include opacity(0.9);
+		@include border-radius(5px 5px 0 0);
+	}
+
+	& .box-detalhes {
+
+		text-align: left;
+		padding: 1.5rem;
+		background-color: #ffffff;
+		margin-top: -5px;
+		border: 1px solid $gray4;
+		border-top: 0;
+
+
+		@include border-radius(0 0 5px 5px);
+		@include border-box;
+	}
+
+	& .box-detalhes-txt {
+
+		overflow: hidden;
+		height: 1rem;
+		color: $gray2;
+		font-weight: 300;
+		font-size: 0.8rem;
+	}
+
+	& .preco {
+
+		color: $gray2;
+		font-size: 0.8rem;
+	}
+}
+.miniatura:hover {
+	transition: box-shadow 0.1s linear 0.1s;
+	@include box-shadow(5px 2px 15px 0 $gray4);
+}
+
+.miniatura:hover img{
+
+	transition: opacity 0.1s linear 0.1s;
+	@include opacity(1);
+}

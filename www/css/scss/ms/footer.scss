@@ -1,0 +1,22 @@
+.footer {
+	width: 100%;
+	display: block;
+	position: relative;
+	bottom: 0;
+	margin-top: -1.5rem;
+	background-color: $gray1;
+	color: $white;
+
+	& .f-iconnect {
+
+		position: relative;
+		color: $white;
+		font-size: 1.7rem;
+	}
+
+	& .title {
+
+		padding: 1.2rem 0;
+		@include border-box;
+	}
+}
