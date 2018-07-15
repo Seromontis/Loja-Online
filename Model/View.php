@@ -84,6 +84,7 @@ class Model_View {
 
 
 				$mustache = array(
+					'{{statics}}' => URL_STATIC
 				);
 
 				$visao = str_replace(array_keys($mustache), array_values($mustache), file_get_contents(DIR.'View/'.$controlador.'/'.$visao.EXTENSAO_VISAO));

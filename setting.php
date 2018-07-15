@@ -62,7 +62,6 @@ define('EXTENSAO_CONTROLADOR', '.php'); 		// Extenção das controllers
 
 define('SAVE_SESSIONS', 'Sessions');
 
-
 /**
 ** FUNÇÕES E MODELS
 **/

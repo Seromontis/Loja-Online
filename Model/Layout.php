@@ -137,6 +137,8 @@ class Model_Layout {
 			$cliente = '- '.$cliente;
 		}
 
+		$URL_STATIC = URL_STATIC;
+
 		$header = <<<php
 <title>LojaOnline</title>
 <meta charset="utf-8">
@@ -151,7 +153,7 @@ class Model_Layout {
 <link rel="shortcut icon" href="/img/site/caveira.png" type="image/x-icon">
 <link rel="icon" href="/img/site/caveira.png" type="image/x-icon">
 <script src="/js/jQuery.min.js{{cache}}"></script>
-<link rel="stylesheet" href="{{static}}css/site.min.css{{cache}}">
+<link rel="stylesheet" href="{$URL_STATIC}css/site.min.css{{cache}}">
 php;
 
 		return $header;
